@@ -11,7 +11,7 @@ const config: AstroUserConfig = defineConfig({
     }),
   ],
   output: "server",
-  adapter: netlify(),
+  adapter: netlify({ edgeMiddleware: true }),
 });
 
 // https://astro.build/config
